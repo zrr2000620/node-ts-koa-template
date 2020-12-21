@@ -1,17 +1,19 @@
 export interface AppSetting {
-    port?:number,
-    db:DatabaseConfig
+  port?: number
+  db: DatabaseConfig
+  logDir?: string
 }
 
 export interface DatabaseConfig {
-    url:string,
+  url: string
 }
 
-const setting:AppSetting={
-    port:8080,
-    db:{
-        url:''
-    }
+const setting: AppSetting = {
+  port: 8080,
+  db: {
+    url: '',
+  },
+  logDir: './log',
 }
 
 export default setting
